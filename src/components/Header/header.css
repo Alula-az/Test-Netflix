@@ -1,0 +1,104 @@
+.header_outer_container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(148, 132, 132); */
+  background-color: rgb(20, 20, 20);
+  background-color: transparent;
+  height: 10vh;
+  color: white;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  z-index: 1;
+  background-color: #111;
+}
+.nav_black {
+  background-color: rgb(20, 20, 20);
+}
+.header_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: yellow; */
+}
+/* from gpt */
+/* General styling for header links and icons */
+.header_left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.header_right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header_right li {
+  margin: 0 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+  list-style: none;
+}
+.header_left li {
+  margin: 0 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+  list-style: none;
+}
+
+.header_right, .header_left li:hover {
+  color: #e50914; /* Netflix red for hover effect */
+}
+
+/* Left side of the header */
+.header_left img {
+  cursor: pointer;
+}
+
+.header_left li {
+  font-size: 0.9rem;
+}
+
+/* Right side of the header */
+.header_right li {
+  font-size: 1.2rem;
+}
+
+.header_right li svg {
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.header_right li:hover svg {
+  color: #e50914; /* Change color on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .header_left ul li {
+    display: none;
+  }
+
+  .header_left ul li:first-child {
+    display: inline;
+  }
+
+  .header_right li {
+    margin: 0 8px;
+  }
+}
